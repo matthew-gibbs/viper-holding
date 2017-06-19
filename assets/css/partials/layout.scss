@@ -1,0 +1,71 @@
+// Layout Styling
+// --------------------------------------------------
+
+.footer {
+  border-top: $base-border;
+  padding-top: 2em;
+}
+
+.app-store-container {
+  .app-store-badge {
+    img {
+      margin: 0 1em 0 0;
+    }
+  }
+}
+
+.sub-nav-container {
+  width: 100%;
+}
+
+.sub-nav {
+  list-style-type: none;
+  padding-left: 0;
+  margin-top: 0;
+
+  li {
+    color: $body-text-color;
+    font-size: $base-font-size;
+  }
+}
+
+.sub-nav--social {
+  li {
+    display: inline-block;
+    margin-right: 1em;
+  }
+}
+
+.sub-nav__item {
+  li {
+    margin: 0 0.5em 0.5em 0;
+    display: inline-block;
+  }
+}
+
+.copyright {
+  font-size: $base-font-size;
+}
+
+
+/* CTAs */
+
+.cta-container .row {
+  justify-content: center;
+}
+
+.customer-cta {
+  background: linear-gradient($transparent-color, $transparent-color), url("../images/site/cta-bg.jpg");
+  background-size: cover;
+  height: auto;
+  padding: 5em $half-gutter-width 3em;
+  margin-bottom: 0;
+}
+
+.customer-cta__form-container {
+  background-color: $background-color;
+  border: $base-border;
+  border-radius: $base-border-radius;
+  text-align: center;
+  padding-bottom: 3em;
+}

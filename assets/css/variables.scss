@@ -1,0 +1,94 @@
+// Variables
+// --------------------------------------------------
+
+// Colours
+$brand-color: #f8e81c;
+$border-color: #fff;
+$background-color: #11091a;
+$transparent-color: rgba(31, 24, 40, 0.7);
+$action-color: $brand-color;
+$light-purple: #1f1828;
+$orange: #ff9619;
+$purple: #bd0fe1;
+$pink: #f84059;
+$teal: #149e9a;
+
+$body-text-color: #fff;
+$heading-text-color: #fff;
+
+// Fonts
+$base-font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+$icon-font-family: "fontawesome";
+
+//Font Weights
+$base-font-weight: 300;
+$heading-font-weight: 700;
+$super-bold-font-weight: 900;
+
+// Type metrics
+$base-line-height: 1.2;
+$heading-line-height: 1.2;
+
+$heading-margin: 1.2em 0 0.4em 0;
+$paragraph-margin: 0.8em;
+
+$heading-weight: 700;
+
+// Type scale
+$base-font-size: 14px;
+$h1-font-size: 2.5rem;
+$h2-font-size: 1.928rem;
+$h3-font-size: 1.44rem;
+$h4-font-size: 1.2rem;
+$h5-font-size: 1rem;
+$small-font-size: 0.833rem;
+
+// Larger scale
+$base-font-size-m: 17px;
+$h1-font-size-m: 2.441rem;
+$h2-font-size-m: 1.953rem;
+$h3-font-size-m: 1.563rem;
+$h4-font-size-m: 1.25rem;
+$h5-font-size-m: 1rem;
+$small-font-size-m: 0.8rem;
+
+// Border
+$base-border-width: 3px;
+$base-border: $base-border-width solid $border-color;
+$base-border-radius: 5px;
+
+// Grid
+$gutter-width: 2em;
+$half-gutter-width: $gutter-width / 2;
+
+$gutter-width-l: 2em;
+$half-gutter-width-l: $gutter-width / 2;
+
+$max-width: 1280px;
+$item-max-width: 1000px;
+
+// Spacing
+$small-spacing: 1em;
+$base-spacing: 2em;
+$large-spacing: 3em;
+
+// Opacity
+$sub-opacity: 0.7;
+
+// Animation
+$short-duration: 0.15s;
+$base-duration: 0.3s;
+$long-duration: 0.5s;
+
+// Breakpoints
+$xsmall: 380px; // Mobile portrait
+$small: 535px; // Mobile landscape
+$medium: 720px; // Tablet portrait
+$large: 960px; // Desktop and tablet landscape
+$xlarge: 1200px; // Large desktop and TV
+
+$xs: $xsmall;
+$s: $small;
+$m: $medium;
+$l: $large;
+$xl: $xlarge;

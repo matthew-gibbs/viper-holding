@@ -1,0 +1,106 @@
+// Hero Styling
+// --------------------------------------------------
+
+.hero {
+  top: 0;
+  height: 50em;
+  padding-top: 20em;
+  overflow: hidden;
+  border-bottom: $base-border;
+
+  @include media($m) {
+    padding-top: 5em;
+  }
+}
+
+.hero--text-only {
+  height: 35em;
+  padding-top: 100px;
+}
+
+.hero-row {
+  align-items: center;
+  height: 100%;
+  justify-content: center;
+  flex-wrap: nowrap !important;
+}
+
+.hero__phone {
+  height: 0;
+  padding-bottom: 300px;
+  width: 100%;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  @include media($m) {
+    padding-bottom: 500px;
+    background-position: right 2em top;
+  }
+}
+
+.android-phone {
+  background-image: url("../images/site/android-phone.png");
+  margin-left: -20px;
+
+}
+
+.iphone {
+  background-image: url("../images/site/iphone.png");
+  transform: translate(30px, 30px);
+
+  @include media($m) {
+    transform: translate(50px, 50px);
+  }
+}
+
+.hero__phone-container {
+  order: 2;
+  display: flex;
+  justify-content: flex-end;
+
+  @include media($m) {
+    order: 1;
+  }
+}
+
+.hero__content-container {
+  order: 1;
+  text-align: center;
+
+  @include media($m) {
+    order: 2;
+    text-align: left;
+  }
+
+  a:last-child {
+    display: block;
+  }
+}
+
+.hero__content-container--text-only {
+  order: 1;
+  text-align: center;
+  display: flex !important;
+  justify-content: center;
+  flex-direction: column;
+
+  @include media($m) {
+    order: 2;
+    text-align: center;
+  }
+}
+
+.app-store-badge {
+  img {
+    height: 40px;
+    width: auto;
+    margin: 1em auto;
+    display: block;
+  }
+
+  @include media($m) {
+    display: inline-block;
+    margin: 0 1em 0 0;
+  }
+}

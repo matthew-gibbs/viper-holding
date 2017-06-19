@@ -1,0 +1,136 @@
+// Club and Offer Block Styling
+// --------------------------------------------------
+
+.bar-slider {
+  padding: 0 !important;
+  margin-top: 0;
+
+  &:last-child {
+    margin-bottom: 0;
+    border-bottom: $base-border;
+  }
+
+  @include media($xs){
+    padding-left: $half-gutter-width !important;
+    padding-right: $half-gutter-width !important;
+  };
+}
+
+.on-viper-now {
+  margin-bottom: 0 !important;
+}
+
+.club-block {
+  background-image: linear-gradient(
+    rgba(31, 24, 40, 0.35),
+    rgba(31, 24, 40, 0),
+    rgba(31, 24, 40, 0.62),
+    rgba(31, 24, 40, 1)),
+  url("../images/site/manchesterhouse.jpg");
+  background-size: cover;
+  background-repeat: none;
+  background-position: center;
+  border-top: $base-border;
+  border-bottom: $base-border;
+  height: 200px;
+  width: 100%;
+  position: relative;
+
+  @include media($xs) {
+    max-width: 375px;
+    border-radius: 10px;
+    border: $base-border;
+    margin-left: 1em;
+  }
+}
+
+.club-block__filters,
+.club-block__info,
+.club-block__offers {
+  position: absolute;
+}
+
+.club-block__filters {
+  top: -5px;
+  right: 1em;
+
+  .filter {
+    list-style-type: none;
+    display: inline-block;
+    padding: 0.2em 0.4em 0.1em;
+    font-weight: $heading-font-weight;
+    font-size: 10px;
+    margin-left: 0.3em;
+    border-radius: 15px;
+  }
+
+  .filter--orange {
+    background-color: $orange;
+  }
+
+  .filter--pink {
+    background-color: $pink;
+  }
+
+  .filter--teal {
+    background-color: $teal;
+  }
+
+  .filter--purple {
+    background-color: $purple;
+  }
+
+  .filter--yellow {
+    background-color: $brand-color;
+    color: #000;
+  }
+}
+
+.club-block__info {
+  bottom: 1em;
+  left: 1em;
+  width: 280px;
+
+  .club-block__name {
+    margin: 0;
+    font-size: 18px;
+
+    &:before {
+      content: " ";
+      position: absolute;
+      border-bottom: 3px solid #fff;
+      width: 20px;
+      top: -10px;
+    }
+  }
+
+  .club-block__strap {
+    text-transform: uppercase;
+    font-weight: $heading-font-weight;
+    font-size: 10px;
+  }
+}
+
+.club-block__offers {
+  bottom: 1em;
+  right: 1em;
+  border: $base-border;
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+  text-align: center;
+
+  .club-offers__number {
+    font-size: 20px;
+    font-weight: $heading-font-weight;
+    line-height: 0;
+  }
+
+  .club-offers__label {
+    text-transform: uppercase;
+    line-height: 0;
+    font-weight: $heading-font-weight;
+    margin-top: -3px;
+    font-size: 10px;
+  }
+}

@@ -1,0 +1,135 @@
+// Features Styling
+// --------------------------------------------------
+
+.phone-image-container,
+.macbook-image-container {
+  display: flex;
+  min-width: 100%;
+  margin-bottom: 0;
+
+  @include media($m) {
+    min-width: 10%;
+  }
+}
+
+.phone-image {
+  height: 0;
+  position: relative;
+  padding-bottom: 300px;
+  width: 100%;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 1em auto;
+
+  @include media($m) {
+    padding-bottom: 500px;
+    background-position: right 2em top;
+  }
+}
+
+.macbook-image {
+  height: 0;
+  position: relative;
+  padding-bottom: 300px;
+  width: 100%;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 3em auto 0;
+
+  @include media($m) {
+    padding-bottom: 250px;
+    background-position: right 2em top;
+  }
+}
+
+.app-feature {
+  border-bottom: $base-border;
+  margin: 0;
+
+  //Even children flipped on desktop
+
+  @include media($m){
+    &:nth-child(odd) {
+
+      .phone-image-container {
+        order: 2;
+
+        .phone-image {
+          background-position: left 2em top;
+        }
+      }
+
+      .feature-content {
+        order: 1;
+        padding-left: 5rem;
+        padding-right: 0;
+        text-align: right;
+
+        .feature-content__heading {
+          position: relative;
+          margin-top: 2em;
+
+          &:before {
+            content: " ";
+            position: absolute;
+            border-bottom: 3px solid #fff;
+            width: 20px;
+            right: 0;
+            top: -10px;
+          }
+        }
+
+        .app-store-badge {
+          margin-right: 0;
+          margin-left: 1em;
+        }
+      }
+    }
+  }
+
+  @include media($l){
+    &:nth-child(odd) {
+      .feature-content {
+        padding-left: 15rem;
+      }
+    }
+  }
+
+  .row {
+    align-items: center;
+
+    @include media($m) {
+      margin: 0 auto;
+      padding: 3em 0;
+    }
+  }
+}
+
+.feature-content {
+  .app-store-badge {
+    display: inline-block;
+    margin-right: 1em;
+
+    @include media($m) {
+      img {
+        width: 7em;
+        height: auto;
+      }
+    }
+
+    @include media($l) {
+      img {
+        width: auto;
+        height: 40px;
+      }
+    }
+  }
+  @include media($m) {
+    padding-right: 5rem;
+  }
+  @include media($l) {
+    padding-right: 10rem;
+  }
+}

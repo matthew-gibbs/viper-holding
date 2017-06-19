@@ -1,0 +1,83 @@
+// Typography
+// --------------------------------------------------
+
+.hero__title,
+.hero__title--text-only {
+  font-size: $h1-font-size * 1.2;
+  position: relative;
+
+  &:before {
+    content: " ";
+    position: absolute;
+    border-bottom: 4px solid #fff;
+    width: 40px;
+    left: 50%;
+    top: -15px;
+    transform: translateX(-50%);
+  }
+}
+
+.hero__title {
+  @include media($m) {
+    margin-bottom: 0.5em;
+    &:before {
+      left: 0;
+      transform: none;
+    }
+  }
+}
+
+.hero__strap,
+.hero__strap--text-only {
+  font-weight: $base-font-weight;
+  max-width: 65%;
+  margin: 1em auto;
+}
+
+.hero__strap {
+  @include media($m) {
+    margin: 0 0 0.5em;
+  }
+}
+
+.hero__strap--text-only {
+  margin: 0 auto;
+}
+
+.line-above {
+  position: relative;
+  margin-top: 2em;
+
+  &:before {
+    content: " ";
+    position: absolute;
+    border-bottom: 3px solid #fff;
+    width: 20px;
+    top: -10px;
+  }
+}
+
+.is-live {
+  position: relative;
+
+  &:after {
+    content: "LIVE";
+    font-size: 14px;
+    border: 3px solid $pink;
+    color: $pink;
+    padding: 0.1em 0.5em;
+    right: 0;
+    position: absolute;
+  }
+}
+
+.restricted-width-p {
+  @include media($m) {
+    max-width: 60%;
+    margin: 0 auto;
+  }
+
+  @include media($l) {
+    max-width: 40%;
+  }
+}

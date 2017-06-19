@@ -1,0 +1,42 @@
+// Forms
+// --------------------------------------------------
+
+.customer-cta__form {
+
+}
+
+.form__label,
+.form__input {
+  display: block;
+  text-align: left;
+  font-size: $h4-font-size;
+
+  @include media($m) {
+    font-size: $h5-font-size;
+  }
+}
+
+.form__label {
+  font-weight: $heading-font-weight;
+  margin: 1em 0 0.5em;
+}
+
+.form__input {
+  font-weight: $base-font-weight;
+  padding: 1em 0.8em;
+  border-radius: $base-border-radius;
+  border: 3px $background-color solid;
+  box-sizing: border-box;
+  width: 100%;
+  color: $background-color;
+
+  &:focus {
+    box-sizing: border-box;
+    border: 3px $brand-color solid;
+    outline: none;
+  }
+
+  &.error {
+    border: 3px $pink solid;
+  }
+}

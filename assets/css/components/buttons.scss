@@ -1,0 +1,30 @@
+// Buttons
+// --------------------------------------------------
+
+.btn {
+  background-color: $brand-color;
+  color: $background-color;
+  padding: 1em 0.8em;
+  border-radius: $base-border-radius;
+  border: none;
+  margin-top: 1em;
+  font-weight: $heading-font-weight;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.btn--form {
+  width: 100%;
+  font-size: $h4-font-size;
+
+  @include media($m) {
+    font-size: $h5-font-size;
+  }
+}
+
+.btn--in-text {
+  display: inline-block;
+  width: auto;
+}

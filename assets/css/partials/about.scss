@@ -1,0 +1,31 @@
+// About page Styling
+// --------------------------------------------------
+
+.viper-mission {
+  border-bottom: $base-border;
+  margin-bottom: 0;
+  padding-bottom: 1em;
+}
+
+.team-member-row {
+  justify-content: center;
+}
+
+.team-member-container {
+  padding: 1.5em 0 0 0;
+
+  @include media($m) {
+    padding: 1.5em 1.5em 1em;
+  };
+}
+
+.team-member {
+  border-radius: 50%;
+  height: 5em;
+  width: 5em;
+  border: $base-border;
+}
+
+.team-member__name {
+  margin-bottom: 0;
+}
