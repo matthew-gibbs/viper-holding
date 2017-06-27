@@ -7,7 +7,7 @@
 		"uuidString": "C1866D31-45FA-4F6B-BB9D-F580EBB833C7"
 		}
 	],
-"creatorBuild": "25813",
+"creatorBuild": "25849",
 "files": {
 	"\/assets\/css\/components\/animation.scss": {
 		"aP": 0,
@@ -377,6 +377,24 @@
 		"opt": 0,
 		"oT": 1,
 		"q": 100
+		},
+	"\/assets\/js\/load-min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/assets\/js\/load-min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/assets\/js\/load.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/assets\/js\/load-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
 		},
 	"\/index.html": {
 		"ft": 8192,
@@ -2347,6 +2365,7 @@
 		},
 	"languageDefaultsUserDefined": [
 		],
+	"overrideExternalServerCSS": 0,
 	"previewPathAddition": "",
 	"skippedFoldersString": "log, _logs, logs, _cache, cache, \/storage\/framework\/sessions, node_modules",
 	"sourceFolderName": "source",

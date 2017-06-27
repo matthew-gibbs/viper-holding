@@ -7,7 +7,7 @@
 
 .form__label,
 .form__input {
-  display: block;
+  display: inline-block;
   text-align: left;
   font-size: $h4-font-size;
 
@@ -27,7 +27,7 @@
   border-radius: $base-border-radius;
   border: 3px $background-color solid;
   box-sizing: border-box;
-  width: 100%;
+  width: 50%;
   color: $background-color;
 
   &:focus {
