@@ -457,7 +457,6 @@ h5 {
     outline: none; }
 
 .btn--form {
-  width: 100%;
   font-size: 1.2rem; }
   @media only screen and (min-width: 720px) {
     .btn--form {
@@ -583,7 +582,7 @@ h5 {
   border-radius: 5px;
   border: 3px #11091a solid;
   box-sizing: border-box;
-  width: 50%;
+  width: 60%;
   color: #11091a; }
   .form__input:focus {
     box-sizing: border-box;
@@ -597,7 +596,8 @@ h5 {
   height: 50em;
   padding-top: 20em;
   overflow: hidden;
-  border-bottom: 3px solid #fff; }
+  border-bottom: 3px solid #fff;
+  margin-bottom: 0 !important; }
   @media only screen and (min-width: 720px) {
     .hero {
       padding-top: 5em; } }
@@ -615,14 +615,16 @@ h5 {
 .hero__phone {
   height: 0;
   padding-bottom: 300px;
-  width: 100%;
+  width: 20em;
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat; }
   @media only screen and (min-width: 720px) {
     .hero__phone {
       padding-bottom: 500px;
-      background-position: right 2em top; } }
+      background-position: right 2em top;
+      position: relative;
+      width: 100%; } }
 
 .android-phone {
   background-image: url("../images/site/android-phone.png");
@@ -638,10 +640,13 @@ h5 {
 .hero__phone-container {
   order: 2;
   display: flex;
-  justify-content: flex-end; }
+  justify-content: flex-end;
+  position: relative; }
   @media only screen and (min-width: 720px) {
     .hero__phone-container {
-      order: 1; } }
+      order: 1;
+      animation-name: fadeInUp;
+      animation-duration: 2s; } }
 
 .hero__content-container {
   order: 1;
@@ -649,7 +654,9 @@ h5 {
   @media only screen and (min-width: 720px) {
     .hero__content-container {
       order: 2;
-      text-align: left; } }
+      text-align: left;
+      animation-name: fadeInUp;
+      animation-duration: 3s; } }
   .hero__content-container a:last-child {
     display: block; }
 
@@ -662,6 +669,8 @@ h5 {
   @media only screen and (min-width: 720px) {
     .hero__content-container--text-only {
       order: 2;
+      animation-name: fadeInUp;
+      animation-duration: 2s;
       text-align: center; } }
 
 .app-store-badge img {
