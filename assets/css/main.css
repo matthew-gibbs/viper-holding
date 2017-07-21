@@ -1254,6 +1254,13 @@ a {
 .app-store-container .app-store-badge img {
   margin: 0 1em 0 0; }
 
+.secure-seal-container img {
+  float: left;
+  margin: 0.5em 1em 0 0; }
+  @media only screen and (min-width: 720px) {
+    .secure-seal-container img {
+      float: right; } }
+
 .sub-nav-container {
   width: 100%; }
 

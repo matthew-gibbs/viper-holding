@@ -14,6 +14,17 @@
   }
 }
 
+.secure-seal-container {
+  img {
+    float: left;
+    margin: 0.5em 1em 0 0;
+
+    @include media($m) {
+      float: right;
+    }
+  }
+}
+
 .sub-nav-container {
   width: 100%;
 }
